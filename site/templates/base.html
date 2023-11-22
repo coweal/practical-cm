@@ -1,0 +1,52 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>{% block title %}Practical Community Management For Everyone{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/m/practical_cm_favicon_transparent.png">
+    <link rel="stylesheet" href="/static/m/css/styles.css" type="text/css" media="screen, projection">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/m/js/scripts.js"></script>
+    {% block js_ext %} {% endblock %} 
+    {% block css_ext %} {% endblock %}
+</head>
+
+<body>
+    {% block body %}
+    
+    <div id="header" class="header">
+        {% block header %}
+        <a href="/">
+            <div class="logo"><img src="/static/m/img/logo_practical_cm-transformed.png" width="250" height="80"/></div>
+            <div class="header-headline"><div>Learning Center For Community Practitioners</div></div>
+        </a>
+        {% endblock %}
+    </div>
+    <div id="content">
+        <div class="content">
+        {% block content %} {% endblock %}
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer">
+            {% block footer %}
+            <div class="links">
+                <a href="https://courses.practical-cm.com/">Courses</a> 
+                <a href="https://meta.practical-cm.com/">Community</a> 
+                <a href="/about">About the project</a> 
+                <a href="/author">About the author</a> 
+            </div>
+            <div>
+                © Practical CM / Nikolai Chabanovskii
+            </div>
+            {% endblock %}
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>
+

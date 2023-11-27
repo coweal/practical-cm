@@ -1,0 +1,24 @@
+User-Agent: *
+Disallow: /static/m/*
+Allow: /
+Crawl-delay: 2
+
+# Aport
+User-agent: AportWorm
+Disallow: /
+ 
+# Yahoo.
+User-agent: Slurp
+Disallow: /
+
+# Spinn3r
+User-agent: Spinn3r
+Disallow: /
+
+# Yahoo Pipes
+User-agent: Yahoo Pipes 1.0
+Disallow: /
+
+# KSCrawler
+User-agent: KSCrawler
+Disallow: /
